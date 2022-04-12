@@ -4,7 +4,7 @@ import Header from "../components/organisms/Header";
 
 const Home = () => {
   return (
-    <div className="overflow-x-hidden">
+    <div>
       <Header />
       <About />
     </div>

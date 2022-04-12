@@ -4,7 +4,7 @@ import { MdSpeed, MdDevices } from "react-icons/md";
 import { BsGem } from "react-icons/bs";
 const Feature = () => {
   return (
-    <div className="flex md:flex-row flex-col gap-10 mt-10 ">
+    <div className="flex md:flex-row flex-col w-full justify-center items-center gap-y-10 mt-10 ">
       <CardFeature
         icon={<MdSpeed />}
         title="Fast"
