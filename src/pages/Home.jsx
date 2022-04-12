@@ -5,6 +5,7 @@ import Header from "../components/organisms/Header";
 const Home = () => {
   return (
     <div>
+      {/* <Navbar /> */}
       <Header />
       <About />
     </div>

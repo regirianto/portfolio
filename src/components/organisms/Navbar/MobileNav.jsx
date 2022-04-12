@@ -1,12 +1,12 @@
 import React from "react";
 import LinkItem from "./LinkItem";
 
-const MobileNav = ({ show }) => {
+const MobileNav = ({ show, mobileNavRef }) => {
   return (
     <div
       className={`md:hidden  ${
-        show ? "right-0 " : "-right-full"
-      } right-0 absolute top-0  bg-transparent/90 w-full h-full text-white flex flex-col justify-center gap-y-14 items-center  font-semibold transition-all duration-300 z-10 `}
+        show ? "right-0" : "-right-full"
+      } absolute top-0  mobile bg-transparent/90 w-3/4 h-full text-white flex flex-col justify-center gap-y-14 items-center  font-semibold transition-all duration-300 z-10 `}
     >
       <LinkItem title={"Home"} />
       <LinkItem title={"About"} />

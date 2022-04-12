@@ -11,10 +11,10 @@ const Header = () => {
       <Navbar />
       <div className="text-white flex items-center flex-col justify-center gap-6  w-full h-full">
         <div className="text-center md:text-5xl text-4xl px-2">
-          <p className="tracking-widest">
+          <p className="tracking-wide">
             Hello,I'm&nbsp;
             <span className="text-primary font-semibold">Regi Rianto </span>
-            <br /> I'm Full-stack web developer
+            <br /> I'm a full-stack web developer
           </p>
         </div>
         <div className="">
