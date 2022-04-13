@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import LinkItem from "./LinkItem";
 import { GoThreeBars } from "react-icons/go";
 import { MdClose } from "react-icons/md";
@@ -26,9 +26,10 @@ const Navbar = () => {
       setShow(false);
     }
   };
+
   return (
-    <div className="text-white ">
-      <div className="container mx-auto py-4 flex justify-between items-center px-5 ">
+    <div className="text-white">
+      <div className="container mx-auto py-4 flex justify-between items-center px-5 z-40">
         <div className="">
           <p className="text-4xl font-semibold text-primary">Logo</p>
         </div>

@@ -3,6 +3,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ["Quicksand", "sans-serif"],
+      inter: "Inter",
     },
     extend: {
       colors: {

@@ -47,17 +47,17 @@ const Skill = () => {
       color: "text-[#57bdda]",
     },
     {
-      name: "Next.JS",
+      name: "Next.js",
       icon: <SiNextdotjs />,
       color: "text-black",
     },
     {
-      name: "Node.JS",
+      name: "Node.js",
       icon: <SiNodedotjs />,
       color: "text-[#6bbf47]",
     },
     {
-      name: "SiExpress",
+      name: "Express.js",
       icon: <SiExpress />,
       color: "text-gray-400",
     },
@@ -85,7 +85,7 @@ const Skill = () => {
         <p className="text-4xl font-semibold text-center mb-10">Skills</p>
         <div className="flex justify-center items-center gap-7 flex-wrap">
           {skills.map((skill, i) => (
-            <div className="flex flex-col items-center w-40 gap-1">
+            <div className="flex flex-col items-center w-40 gap-1" key={i}>
               <div className={`text-5xl ${skill.color}`}>{skill.icon}</div>
               <p className="text-lg">{skill.name}</p>
             </div>
