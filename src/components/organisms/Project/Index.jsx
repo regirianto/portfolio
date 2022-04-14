@@ -38,21 +38,6 @@ const Project = () => {
       desc: "Staycation is a platform to book hotels",
     },
     {
-      id: 2,
-      name: "The Malaka.",
-      tech: ["Tailwind", "ReactJS"],
-      img: [
-        "/img/the-malaka-hedear.png",
-        "/img/the-malaka-3.png",
-        "/img/the-malaka-4.png",
-        "/img/the-malaka-5.png",
-        "/img/the-malaka.png",
-      ],
-      repo: "https://github.com/regirianto/the-malaka",
-      website: "https://the-malaka-regirianto.vercel.app",
-      desc: "The Malaka is a landing page for a book to learn tailwind css",
-    },
-    {
       id: 3,
       name: "Staycation Server",
       tech: ["NodeJS", "ExpressJS", "MongoDB", "Bootstrap"],
@@ -66,6 +51,21 @@ const Project = () => {
       repo: "https://github.com/regirianto/staycation-server",
       website: "https://staycation-server-app.herokuapp.com",
       desc: "Staycation-server is a content mangement system for stacycation website for booking hotels",
+    },
+    {
+      id: 2,
+      name: "The Malaka.",
+      tech: ["Tailwind", "ReactJS"],
+      img: [
+        "/img/the-malaka-hedear.png",
+        "/img/the-malaka-3.png",
+        "/img/the-malaka-4.png",
+        "/img/the-malaka-5.png",
+        "/img/the-malaka.png",
+      ],
+      repo: "https://github.com/regirianto/the-malaka",
+      website: "https://the-malaka-regirianto.vercel.app",
+      desc: "The Malaka is a landing page for a book to learn tailwind css",
     },
   ]);
 
