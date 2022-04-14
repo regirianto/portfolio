@@ -1,11 +1,11 @@
 import React from "react";
 import Navbar from "../Navbar";
-import { AiOutlineArrowDown } from "react-icons/ai";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Header = () => {
   return (
     <div
-      className=" h-screen w-full bg-no-repeat"
+      className=" h-screen w-full "
       style={{ backgroundImage: "url(/img/Meteor.svg)" }}
     >
       <Navbar />
@@ -18,8 +18,9 @@ const Header = () => {
           </p>
         </div>
         <div className="">
-          <button className="px-6 py-3 md:text-xl text-lg border border-white hover:bg-primary hover:border-transparent outline-none flex items-center gap-2 font-semibold  transition ease-in">
-            View My Work <AiOutlineArrowDown />
+          <button className="px-6 py-3 md:text-xl text-lg border border-white hover:bg-primary hover:border-transparent outline-none flex items-center gap-2 font-semibold  transition ease-in group">
+            View My Work{" "}
+            <AiOutlineArrowRight className="group-hover:rotate-90 transition ease-in-out duration-300" />
           </button>
         </div>
       </div>
