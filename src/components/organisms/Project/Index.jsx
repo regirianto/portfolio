@@ -42,7 +42,7 @@ const Project = () => {
       name: "Staycation Server",
       tech: ["NodeJS", "ExpressJS", "MongoDB", "Bootstrap"],
       img: [
-        "/img/staycation-server-3.png",
+        "/img/the-malaka-hedear.png",
         "/img/staycation-server-4.png",
         "/img/staycation-server-2.png",
         "/img/staycation-server-5.png",
