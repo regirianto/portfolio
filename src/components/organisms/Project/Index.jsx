@@ -1,19 +1,23 @@
-import React, { useEffect, useState } from "react";
-import TitleSection from "../../atom/TitleSection";
-import LightGallery from "lightgallery/react";
-import "lightgallery/css/lightgallery.css";
-import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
+import "lightgallery/css/lg-zoom.css";
+import "lightgallery/css/lightgallery.css";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
-import { BsFillImageFill, BsGlobe, BsGithub } from "react-icons/bs";
+import LightGallery from "lightgallery/react";
+import React, { useState } from "react";
+import { BsFillImageFill, BsGithub, BsGlobe } from "react-icons/bs";
+import TitleSection from "../../atom/TitleSection";
 const Project = () => {
   const [projects, setProjects] = useState([
     {
       id: 4,
       name: "R-Movies",
       tech: ["ReactJS", "Tailwindcss", "TMDB-API", "Redux"],
-      img: ["/img/movies-2.png", "/img/movies-1.png", "/img/movies-3.png"],
+      img: [
+        "https://res.cloudinary.com/dg3vgxclp/image/upload/v1650252866/portfolio/movies-2_a2hhj4.png",
+        "https://res.cloudinary.com/dg3vgxclp/image/upload/v1650252851/portfolio/movies-1_pdshrb.png",
+        "https://res.cloudinary.com/dg3vgxclp/image/upload/v1650252870/portfolio/movies-3_f7nglm.png",
+      ],
       repo: "https://github.com/regirianto/R-movies",
       website: "https://r-movies-lovat.vercel.app",
       desc: "R-Movies is a website using tmdb api for search movies",
@@ -23,10 +27,10 @@ const Project = () => {
       name: "Staycation.",
       tech: ["Bootstrap", "Next.js", "Redux"],
       img: [
-        "/img/staycation-full.png",
-        "/img/staycation-header.png",
-        "/img/staycation-detail.png",
-        "/img/staycation-booking-information.png",
+        "https://res.cloudinary.com/dg3vgxclp/image/upload/v1650252867/portfolio/staycation-full_llcqcf.png",
+        "https://res.cloudinary.com/dg3vgxclp/image/upload/v1650252856/portfolio/staycation-header_fpq6qi.png",
+        "https://res.cloudinary.com/dg3vgxclp/image/upload/v1650252857/portfolio/staycation-detail_lw4ssd.png",
+        "https://res.cloudinary.com/dg3vgxclp/image/upload/v1650252854/portfolio/staycation-booking-information_mhxp8t.png",
       ],
       repo: "https://github.com/regirianto/staycation",
       website: "https://staycation-seven.vercel.app",
@@ -37,11 +41,11 @@ const Project = () => {
       name: "Staycation Server",
       tech: ["NodeJS", "ExpressJS", "MongoDB", "Bootstrap"],
       img: [
-        "/img/staycation-server-3.png",
-        "/img/staycation-server-2.png",
-        "/img/staycation-server-4.png",
-        "/img/staycation-server-5.png",
-        "/img/staycation-server.png",
+        "https://res.cloudinary.com/dg3vgxclp/image/upload/v1650252857/portfolio/Staycation-server-3_qap91k.png",
+        "https://res.cloudinary.com/dg3vgxclp/image/upload/v1650252862/portfolio/Staycation-server-4_mwkmgi.png",
+        "https://res.cloudinary.com/dg3vgxclp/image/upload/v1650252858/portfolio/Staycation-server-5_afb1jb.png",
+        "https://res.cloudinary.com/dg3vgxclp/image/upload/v1650252855/portfolio/Staycation-server_m2hrka.png",
+        "https://res.cloudinary.com/dg3vgxclp/image/upload/v1650252857/portfolio/Staycation-server-2_jklyuc.png",
       ],
       repo: "https://github.com/regirianto/staycation-server",
       website: "https://staycation-server-app.herokuapp.com",
@@ -52,11 +56,11 @@ const Project = () => {
       name: "The Malaka.",
       tech: ["Tailwind", "ReactJS"],
       img: [
-        "/img/the-malaka-full.png",
-        "/img/the-malaka-hedear.png",
-        "/img/the-malaka-3.png",
-        "/img/the-malaka-4.png",
-        "/img/the-malaka-5.png",
+        "https://res.cloudinary.com/dg3vgxclp/image/upload/v1650253203/portfolio/the-malaka-header_1_ryzhld.png",
+        "https://res.cloudinary.com/dg3vgxclp/image/upload/v1650252865/portfolio/the-malaka-full_kizwve.png",
+        "https://res.cloudinary.com/dg3vgxclp/image/upload/v1650252859/portfolio/the-malaka-3_udbgoe.png",
+        "https://res.cloudinary.com/dg3vgxclp/image/upload/v1650252859/portfolio/the-malaka-4_spiha3.png",
+        "https://res.cloudinary.com/dg3vgxclp/image/upload/v1650252861/portfolio/the-malaka-5_ovtixn.png",
       ],
       repo: "https://github.com/regirianto/the-malaka",
       website: "https://the-malaka-regirianto.vercel.app",
@@ -96,7 +100,7 @@ const Project = () => {
                   >
                     {project.img.map((img) => (
                       <a href={img} className="absolute bottom-0 left-0">
-                        <img src={img} alt="" className="opacity-0" />
+                        <img src={img} alt="" className="opacity-0 w-10" />
                       </a>
                     ))}
                   </LightGallery>
