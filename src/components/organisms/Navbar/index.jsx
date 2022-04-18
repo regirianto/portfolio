@@ -4,7 +4,7 @@ import { GoThreeBars } from "react-icons/go";
 import { MdClose } from "react-icons/md";
 import MobileNav from "./MobileNav";
 import { disableBodyScroll, clearAllBodyScrollLocks } from "body-scroll-lock";
-const Navbar = () => {
+const Navbar = ({ to }) => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -35,9 +35,9 @@ const Navbar = () => {
         </div>
         <div className="md:flex hidden gap-x-3">
           <LinkItem title={"Home"} />
-          <LinkItem title={"About"} />
+          <LinkItem title={"About"} to={to.aboutRef} />
           <LinkItem title={"Skill"} />
-          <LinkItem title={"Project"} />
+          <LinkItem title={"Project"} to={to.projectRef} />
           <LinkItem title={"Contact"} />
         </div>
         <div className="md:hidden absolute right-10 z-20  mobile">
@@ -54,7 +54,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
-      <MobileNav show={show} />
+      <MobileNav show={show} to={to} />
     </div>
   );
 };

@@ -2,13 +2,13 @@ import React from "react";
 import Navbar from "../Navbar";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
-const Header = () => {
+const Header = ({ to }) => {
   return (
     <div
       className=" h-screen w-full "
       style={{ backgroundImage: "url(/img/Meteor.svg)" }}
     >
-      <Navbar />
+      <Navbar to={to} />
       <div className="text-white flex items-center flex-col justify-center gap-6  w-full h-full">
         <div className="text-center md:text-5xl text-4xl px-2">
           <p className="tracking-wide">
@@ -18,7 +18,15 @@ const Header = () => {
           </p>
         </div>
         <div className="">
-          <button className="px-6 py-3 md:text-xl text-lg border border-white hover:bg-primary hover:border-transparent outline-none flex items-center gap-2 font-semibold  transition ease-in group">
+          <button
+            className="px-6 py-3 md:text-xl text-lg border border-white hover:bg-primary hover:border-transparent outline-none flex items-center gap-2 font-semibold  transition ease-in group"
+            onClick={() =>
+              window.scrollTo({
+                behavior: "smooth",
+                top: to.current.offsetTop - 30,
+              })
+            }
+          >
             View My Work{" "}
             <AiOutlineArrowRight className="group-hover:rotate-90 transition ease-in-out duration-300" />
           </button>

@@ -85,7 +85,10 @@ const Skill = () => {
         <p className="text-4xl font-semibold text-center mb-10">Skills</p>
         <div className="flex justify-center items-center gap-7 flex-wrap">
           {skills.map((skill, i) => (
-            <div className="flex flex-col items-center w-40 gap-1" key={i}>
+            <div
+              className="flex flex-col items-center w-40 gap-1 grayscale hover:grayscale-0 transition duration-200"
+              key={i}
+            >
               <div className={`text-5xl ${skill.color}`}>{skill.icon}</div>
               <p className="text-lg">{skill.name}</p>
             </div>

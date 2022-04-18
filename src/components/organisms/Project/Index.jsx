@@ -1,13 +1,10 @@
-import "lightgallery/css/lg-thumbnail.css";
-import "lightgallery/css/lg-zoom.css";
-import "lightgallery/css/lightgallery.css";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
 import LightGallery from "lightgallery/react";
-import React, { useState } from "react";
+import React, { useState, forwardRef, useEffect } from "react";
 import { BsFillImageFill, BsGithub, BsGlobe } from "react-icons/bs";
 import TitleSection from "../../atom/TitleSection";
-const Project = () => {
+const Project = forwardRef((props, ref) => {
   const [projects, setProjects] = useState([
     {
       id: 4,
@@ -69,7 +66,7 @@ const Project = () => {
   ]);
 
   return (
-    <div className="bg-neutral-100 py-12 px-5 my-20">
+    <div className="bg-neutral-100 py-12 px-5 my-20" ref={ref}>
       <TitleSection title="Projects" />
       <div className=" flex justify-center gap-5 flex-wrap">
         {projects.map((project) => (
@@ -99,7 +96,11 @@ const Project = () => {
                     className="absolute top-0"
                   >
                     {project.img.map((img) => (
-                      <a href={img} className="absolute bottom-0 left-0">
+                      <a
+                        href={img}
+                        className="absolute bottom-0 left-0"
+                        key={img}
+                      >
                         <img src={img} alt="" className="opacity-0 w-10" />
                       </a>
                     ))}
@@ -130,6 +131,6 @@ const Project = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Project;
