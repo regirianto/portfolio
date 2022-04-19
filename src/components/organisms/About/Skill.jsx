@@ -88,6 +88,10 @@ const Skill = () => {
             <div
               className="flex flex-col items-center w-40 gap-1 grayscale hover:grayscale-0 transition duration-200"
               key={i}
+              data-aos="fade-down"
+              data-aos-delay={20 * (i + 1 * 10)}
+              data-aos-duration={400 * (i + 1)}
+              data-aos-easing="linear"
             >
               <div className={`text-5xl ${skill.color}`}>{skill.icon}</div>
               <p className="text-lg">{skill.name}</p>

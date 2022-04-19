@@ -14,17 +14,21 @@ const Certificate = () => {
     <div className="my-20">
       <TitleSection title="Certificate" />
       <div className="flex md:flex-row flex-col justify-center w-full gap-11 p-6 ">
-        {certificates.map((certificate) => (
+        {certificates.map((certificate, i) => (
           <LightGallery
             speed={500}
             plugins={[lgThumbnail, lgZoom]}
             key={certificate}
           >
-            <a href={certificate}>
+            <a href={certificate} data-aos="fade-down">
               <img
                 src={certificate}
                 alt="Certificate"
                 className="md:w-[450px] w-full shadow-xl"
+                data-aos="flip-up"
+                data-aos-delay={20 * (i + 1 * 50)}
+                data-aos-duration={400 * (i + 1)}
+                data-aos-easing="linear"
               />
             </a>
           </LightGallery>

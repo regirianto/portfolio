@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="w-full bg-secondary text-white py-10 text-center relative ">
       <div className="flex justify-center gap-3 items-center">
         <div
-          className="absolute left-0 right-0 -top-5 max-w-max m-auto p-1 rounded-full text-center   bg-primary text-4xl font-bold cursor-pointer hover:bg-primary/90 transition-colors"
+          className="absolute left-0 right-0 -top-6 max-w-max m-auto p-1 rounded-full text-center   bg-primary text-4xl font-bold cursor-pointer hover:bg-primary/90 transition-colors"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
           <AiOutlineArrowUp />

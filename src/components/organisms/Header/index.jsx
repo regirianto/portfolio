@@ -13,10 +13,10 @@ const Header = ({ to }) => {
     >
       <Navbar to={to} homeRef={homeRef} />
       <div className="text-white flex items-center flex-col justify-center gap-6  w-full h-full">
-        <div className="text-center md:text-5xl text-4xl px-2">
+        <div className="text-center md:text-5xl text-3xl px-2">
           <div className="tracking-wide flex justify-center items-center">
             <p>Hello,I'm&nbsp;</p>
-            <p className="font-bold drop-shadow-2xl">
+            <div className="font-bold drop-shadow-2xl">
               {
                 <Typewriter
                   options={{
@@ -25,8 +25,8 @@ const Header = ({ to }) => {
                     loop: true,
                   }}
                 />
-              }{" "}
-            </p>
+              }
+            </div>
           </div>
           <p>I'm a full-stack web developer</p>
         </div>

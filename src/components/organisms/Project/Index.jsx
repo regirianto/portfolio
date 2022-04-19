@@ -69,10 +69,14 @@ const Project = forwardRef((props, ref) => {
     <div className="bg-neutral-100 py-12 px-5 my-20" ref={ref}>
       <TitleSection title="Projects" />
       <div className=" flex justify-center gap-5 flex-wrap">
-        {projects.map((project) => (
+        {projects.map((project, i) => (
           <div
             className="max-w-[600px] max-h-[300px]  shadow-2xl drop-shadow-xl rounded overflow-hidden relative"
             key={project.id}
+            data-aos="fade-down"
+            data-aos-delay={2000 * (i + 1 * 50)}
+            data-aos-duration={400 * (i + 1)}
+            data-aos-easing="linear"
           >
             <img src={project.img[0]} className="w-full" alt="" />
             <div className="bg-black/80 backdrop-blur-md absolute w-full h-full top-0 left-0 overflow-hidden opacity-0 hover:opacity-100 transition ease-in-out duration-300 flex flex-col gap-1 p-3 select-none">

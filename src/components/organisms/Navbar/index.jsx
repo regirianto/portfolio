@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import LinkItem from "./LinkItem";
 import { GoThreeBars } from "react-icons/go";
 import { MdClose } from "react-icons/md";
