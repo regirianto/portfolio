@@ -1,9 +1,9 @@
-import React from "react";
+import React, { forwardRef, useEffect } from "react";
 import TitleSection from "../../atom/TitleSection";
 
-const Contact = () => {
+const Contact = forwardRef(({}, ref) => {
   return (
-    <div className="my-20">
+    <div className="my-20" ref={ref}>
       <TitleSection title="Contact" />
       <form className="flex justify-center flex-col items-center">
         <p className="text-primary font-bold text-center text-xl mb-5">
@@ -29,13 +29,13 @@ const Contact = () => {
             placeholder="Your Message"
             className="w-full h-32 py-4 px-4  bg-slate-200 rounded focus:ring-2 focus:ring-primary outline-none placeholder:font-semibold"
           ></textarea>
-          <button className="bg-primary font-semibold text-xl  text-white py-2 rounded-full font-inter uppercase tracking-wide">
+          <button className="bg-primary hover:bg-primary/90 font-semibold text-xl  text-white py-2 rounded-full font-inter uppercase tracking-wide">
             Submit
           </button>
         </div>
       </form>
     </div>
   );
-};
+});
 
 export default Contact;

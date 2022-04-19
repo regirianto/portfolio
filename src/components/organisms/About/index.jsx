@@ -5,7 +5,7 @@ import Skill from "./Skill";
 
 const About = forwardRef((props, ref) => {
   return (
-    <div className="my-20" ref={ref}>
+    <div className="my-10 py-10" ref={ref}>
       <TitleSection title="about" />
       <Feature />
       <Skill />
