@@ -80,7 +80,6 @@ const Skill = () => {
 
   return (
     <div className="flex md:flex-row flex-col gap-y-20 justify-center items-center mt-24">
-      <div className="bg-red-400 flex-1">asd</div>
       <div className="flex-1">
         <p className="text-4xl font-semibold text-center mb-10">Skills</p>
         <div className="flex justify-center items-center gap-7 flex-wrap">
